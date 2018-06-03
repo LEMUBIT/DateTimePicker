@@ -21,10 +21,6 @@ import android.content.Context;
 import android.content.res.ColorStateList;
 import android.content.res.TypedArray;
 import android.os.Build;
-import android.support.annotation.Nullable;
-import android.support.v4.view.ViewCompat;
-import android.support.v4.view.ViewPager;
-import android.support.v7.content.res.AppCompatResources;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -37,6 +33,11 @@ import com.takisoft.datetimepicker.util.Utils;
 
 import java.util.Calendar;
 import java.util.Locale;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.content.res.AppCompatResources;
+import androidx.core.view.ViewCompat;
+import androidx.viewpager.widget.ViewPager;
 
 // TODO import android.icu.util.Calendar;
 //import android.util.MathUtils;

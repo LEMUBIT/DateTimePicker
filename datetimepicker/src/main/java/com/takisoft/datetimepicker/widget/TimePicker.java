@@ -22,10 +22,6 @@ import android.content.res.TypedArray;
 import android.os.Build;
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.support.annotation.IntDef;
-import android.support.annotation.IntRange;
-import android.support.annotation.NonNull;
-import android.support.v4.math.MathUtils;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
@@ -43,6 +39,11 @@ import java.lang.annotation.RetentionPolicy;
 import java.text.DateFormatSymbols;
 import java.util.Calendar;
 import java.util.Locale;
+
+import androidx.annotation.IntDef;
+import androidx.annotation.IntRange;
+import androidx.annotation.NonNull;
+import androidx.core.math.MathUtils;
 
 // import android.util.MathUtils;
 

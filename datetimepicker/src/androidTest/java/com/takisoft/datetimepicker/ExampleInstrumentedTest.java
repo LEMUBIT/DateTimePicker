@@ -1,8 +1,6 @@
 package com.takisoft.datetimepicker;
 
 import android.content.Context;
-import android.support.test.InstrumentationRegistry;
-import android.support.test.runner.AndroidJUnit4;
 import android.text.TextUtils;
 import android.text.format.DateFormat;
 import android.util.Log;
@@ -15,6 +13,9 @@ import org.junit.runner.RunWith;
 import java.util.Locale;
 import java.util.Map;
 import java.util.TreeMap;
+
+import androidx.test.InstrumentationRegistry;
+import androidx.test.runner.AndroidJUnit4;
 
 import static org.junit.Assert.assertEquals;
 

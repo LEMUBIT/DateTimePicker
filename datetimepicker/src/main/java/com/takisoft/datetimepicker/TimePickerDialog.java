@@ -20,7 +20,6 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
 import android.os.Bundle;
-import android.support.v7.app.AlertDialog;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -28,10 +27,12 @@ import android.view.View;
 import com.takisoft.datetimepicker.widget.TimePicker;
 import com.takisoft.datetimepicker.widget.TimePicker.OnTimeChangedListener;
 
+import androidx.appcompat.app.AlertDialog;
+
 /**
  * A dialog that prompts the user for the time of day using a
  * {@link TimePicker}.
- *
+ * <p>
  * <p>
  * See the <a href="{@docRoot}guide/topics/ui/controls/pickers.html">Pickers</a>
  * guide.
@@ -58,9 +59,9 @@ public class TimePickerDialog extends AlertDialog implements OnClickListener,
          * Called when the user is done setting a new time and the dialog has
          * closed.
          *
-         * @param view the view associated with this listener
+         * @param view      the view associated with this listener
          * @param hourOfDay the hour that was set
-         * @param minute the minute that was set
+         * @param minute    the minute that was set
          */
         void onTimeSet(TimePicker view, int hourOfDay, int minute);
     }
@@ -68,14 +69,14 @@ public class TimePickerDialog extends AlertDialog implements OnClickListener,
     /**
      * Creates a new time picker dialog.
      *
-     * @param context the parent context
-     * @param listener the listener to call when the time is set
-     * @param hourOfDay the initial hour
-     * @param minute the initial minute
+     * @param context      the parent context
+     * @param listener     the listener to call when the time is set
+     * @param hourOfDay    the initial hour
+     * @param minute       the initial minute
      * @param is24HourView whether this is a 24 hour view or AM/PM
      */
     public TimePickerDialog(Context context, OnTimeSetListener listener, int hourOfDay, int minute,
-            boolean is24HourView) {
+                            boolean is24HourView) {
         this(context, 0, listener, hourOfDay, minute, is24HourView);
     }
 
@@ -101,15 +102,15 @@ public class TimePickerDialog extends AlertDialog implements OnClickListener,
      * {@link android.R.attr#timePickerDialogTheme android:timePickerDialogTheme}
      * attribute on the parent {@code context}'s theme.
      *
-     * @param context the parent context
-     * @param themeResId the resource ID of the theme to apply to this dialog
-     * @param listener the listener to call when the time is set
-     * @param hourOfDay the initial hour
-     * @param minute the initial minute
+     * @param context      the parent context
+     * @param themeResId   the resource ID of the theme to apply to this dialog
+     * @param listener     the listener to call when the time is set
+     * @param hourOfDay    the initial hour
+     * @param minute       the initial minute
      * @param is24HourView Whether this is a 24 hour view, or AM/PM.
      */
     public TimePickerDialog(Context context, int themeResId, OnTimeSetListener listener,
-            int hourOfDay, int minute, boolean is24HourView) {
+                            int hourOfDay, int minute, boolean is24HourView) {
         super(context, resolveDialogTheme(context, themeResId));
 
         mTimeSetListener = listener;
@@ -180,7 +181,7 @@ public class TimePickerDialog extends AlertDialog implements OnClickListener,
     /**
      * Sets the current time.
      *
-     * @param hourOfDay The current hour within the day.
+     * @param hourOfDay    The current hour within the day.
      * @param minuteOfHour The current minute within the hour.
      */
     public void updateTime(int hourOfDay, int minuteOfHour) {

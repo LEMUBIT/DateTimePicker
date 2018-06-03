@@ -24,6 +24,6 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 
--keepclassmembers class android.support.v4.view.ViewPager {
+-keepclassmembers class androidx.viewpager.widget.ViewPager {
     void populate();
 }

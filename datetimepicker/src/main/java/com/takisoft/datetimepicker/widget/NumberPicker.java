@@ -28,15 +28,6 @@ import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.CallSuper;
-import android.support.annotation.IntDef;
-import android.support.annotation.Keep;
-import android.support.annotation.Nullable;
-import android.support.v4.graphics.drawable.DrawableCompat;
-import android.support.v4.view.ViewCompat;
-import android.support.v4.view.accessibility.AccessibilityEventCompat;
-import android.support.v4.view.accessibility.AccessibilityNodeInfoCompat;
-import android.support.v4.view.accessibility.AccessibilityRecordCompat;
 import android.text.InputFilter;
 import android.text.InputType;
 import android.text.Spanned;
@@ -77,6 +68,17 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
+
+import androidx.annotation.CallSuper;
+import androidx.annotation.IntDef;
+import androidx.annotation.Keep;
+import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatEditText;
+import androidx.core.graphics.drawable.DrawableCompat;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.accessibility.AccessibilityEventCompat;
+import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
+import androidx.core.view.accessibility.AccessibilityRecordCompat;
 
 //import libcore.icu.LocaleData;
 
@@ -2409,7 +2411,7 @@ public class NumberPicker extends LinearLayout {
     }
 
     @Keep
-    public static class CustomEditText extends android.support.v7.widget.AppCompatEditText {
+    public static class CustomEditText extends AppCompatEditText {
 
         public CustomEditText(Context context, AttributeSet attrs) {
             super(context, attrs);
@@ -2438,6 +2440,7 @@ public class NumberPicker extends LinearLayout {
     /**
      * Class for managing virtual view tree rooted at this picker.
      */
+    @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
     class AccessibilityNodeProviderImpl extends AccessibilityNodeProvider {
         private static final int UNDEFINED = Integer.MIN_VALUE;
 

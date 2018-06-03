@@ -62,7 +62,7 @@ class YearPickerView extends ListView {
 
     }
 
-    private void handleAttr(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes){
+    private void handleAttr(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         final LayoutParams frame = new LayoutParams(
                 LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
         setLayoutParams(frame);

@@ -26,7 +26,6 @@ import android.icu.text.DisplayContext;
 import android.icu.text.SimpleDateFormat;
 import android.os.Build;
 import android.os.Parcelable;
-import android.support.annotation.Nullable;
 import android.text.format.DateUtils;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
@@ -46,6 +45,8 @@ import com.takisoft.datetimepicker.widget.YearPickerView.OnYearSelectedListener;
 
 import java.util.Calendar;
 import java.util.Locale;
+
+import androidx.annotation.Nullable;
 
 //import android.icu.util.Calendar;
 

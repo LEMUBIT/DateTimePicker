@@ -1,7 +1,6 @@
 package com.takisoft.datetimepicker.sample;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.text.format.DateFormat;
 import android.widget.Toast;
 
@@ -9,6 +8,8 @@ import com.takisoft.datetimepicker.DatePickerDialog;
 import com.takisoft.datetimepicker.TimePickerDialog;
 
 import java.util.Calendar;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 
 public class MainActivity extends AppCompatActivity {

@@ -2,12 +2,13 @@ package com.takisoft.datetimepicker.util;
 
 import android.content.Context;
 import android.os.Build;
-import android.support.annotation.VisibleForTesting;
 import android.text.format.DateFormat;
 
 import com.takisoft.datetimepicker.R;
 
 import java.util.Locale;
+
+import androidx.annotation.VisibleForTesting;
 // import libcore.icu.ICU;
 
 public class DateFormatFix {

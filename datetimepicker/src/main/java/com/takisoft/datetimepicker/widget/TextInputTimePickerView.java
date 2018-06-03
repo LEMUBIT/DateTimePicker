@@ -20,7 +20,6 @@ import android.annotation.TargetApi;
 import android.content.Context;
 import android.os.Build;
 import android.os.IBinder;
-import android.support.v4.math.MathUtils;
 import android.text.Editable;
 import android.text.InputFilter;
 import android.text.TextWatcher;
@@ -35,6 +34,8 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.takisoft.datetimepicker.R;
+
+import androidx.core.math.MathUtils;
 
 /**
  * View to show text input based time picker with hour and minute fields and an optional AM/PM

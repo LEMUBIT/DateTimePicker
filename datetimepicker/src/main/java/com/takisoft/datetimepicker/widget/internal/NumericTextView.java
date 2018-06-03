@@ -23,6 +23,8 @@ import android.view.KeyEvent;
 
 import com.takisoft.datetimepicker.util.StateSet;
 
+import androidx.appcompat.widget.AppCompatTextView;
+
 /**
  * Extension of TextView that can handle displaying and inputting a range of
  * numbers.
@@ -31,24 +33,30 @@ import com.takisoft.datetimepicker.util.StateSet;
  * {@link #setHint(CharSequence)} directly. Instead, they should call
  * {@link #setValue(int)} to modify the currently displayed value.
  */
-public class NumericTextView extends android.support.v7.widget.AppCompatTextView {
+public class NumericTextView extends AppCompatTextView {
     private static final int RADIX = 10;
     private static final double LOG_RADIX = Math.log(RADIX);
 
     private int mMinValue = 0;
     private int mMaxValue = 99;
 
-    /** Number of digits in the maximum value. */
+    /**
+     * Number of digits in the maximum value.
+     */
     private int mMaxCount = 2;
 
     private boolean mShowLeadingZeroes = true;
 
     private int mValue;
 
-    /** Number of digits entered during editing mode. */
+    /**
+     * Number of digits entered during editing mode.
+     */
     private int mCount;
 
-    /** Used to restore the value after an aborted edit. */
+    /**
+     * Used to restore the value after an aborted edit.
+     */
     private int mPreviousValue;
 
     private OnValueChangedListener mListener;
@@ -315,11 +323,11 @@ public class NumericTextView extends android.support.v7.widget.AppCompatTextView
         /**
          * Called when the value displayed by {@code view} changes.
          *
-         * @param view the view whose value changed
-         * @param value the new value
-         * @param isValid {@code true} if the value is valid (e.g. within the
-         *                range specified by {@link #setRange(int, int)}),
-         *                {@code false} otherwise
+         * @param view       the view whose value changed
+         * @param value      the new value
+         * @param isValid    {@code true} if the value is valid (e.g. within the
+         *                   range specified by {@link #setRange(int, int)}),
+         *                   {@code false} otherwise
          * @param isFinished {@code true} if the no more digits may be entered,
          *                   {@code false} if more digits may be entered
          */

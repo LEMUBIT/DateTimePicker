@@ -21,7 +21,6 @@ import android.content.res.Configuration;
 import android.content.res.TypedArray;
 import android.os.Build;
 import android.os.Parcelable;
-import android.support.annotation.NonNull;
 import android.text.InputType;
 import android.text.TextUtils;
 import android.text.format.DateUtils;
@@ -33,12 +32,12 @@ import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.LinearLayout;
-import com.takisoft.datetimepicker.widget.NumberPicker.OnValueChangeListener;
 import android.widget.TextView;
 
 import com.takisoft.datetimepicker.R;
 import com.takisoft.datetimepicker.util.DateFormatFix;
 import com.takisoft.datetimepicker.widget.DatePicker.AbstractDatePickerDelegate;
+import com.takisoft.datetimepicker.widget.NumberPicker.OnValueChangeListener;
 
 import java.text.DateFormatSymbols;
 import java.text.DecimalFormatSymbols;
@@ -47,6 +46,8 @@ import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Locale;
+
+import androidx.annotation.NonNull;
 
 //import android.icu.util.Calendar;
 

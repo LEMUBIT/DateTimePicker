@@ -33,10 +33,6 @@ import android.icu.text.DisplayContext;
 import android.icu.text.SimpleDateFormat;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.view.ViewCompat;
-import android.support.v4.view.accessibility.AccessibilityNodeInfoCompat;
-import android.support.v4.widget.ExploreByTouchHelper;
 import android.text.TextPaint;
 import android.text.format.DateFormat;
 import android.util.AttributeSet;
@@ -56,6 +52,11 @@ import java.text.NumberFormat;
 import java.util.Calendar;
 import java.util.List;
 import java.util.Locale;
+
+import androidx.annotation.Nullable;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
+import androidx.customview.widget.ExploreByTouchHelper;
 
 //import android.support.v4.widget.ExploreByTouchHelper;
 
@@ -228,7 +229,7 @@ class SimpleMonthView extends View {
         // Use tiny (e.g. single-character) weekday names from ICU. The indices
         // for this list correspond to Calendar days, e.g. SUNDAY is index 1.
         /*final String[] tinyWeekdayNames = LocaleData.get(mLocale).tinyWeekdayNames;
-        */
+         */
 
         final String[] tinyWeekdayNames = new String[DAYS_IN_WEEK];
 

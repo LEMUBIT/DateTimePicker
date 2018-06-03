@@ -18,12 +18,13 @@ package com.takisoft.datetimepicker.widget;
 
 import android.content.Context;
 import android.os.Build;
-import android.support.annotation.StyleRes;
 import android.util.AttributeSet;
 
 import com.takisoft.datetimepicker.widget.DayPickerView.OnDaySelectedListener;
 
 import java.util.Calendar;
+
+import androidx.annotation.StyleRes;
 
 // TODO import android.icu.util.Calendar;
 
